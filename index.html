@@ -2,17 +2,21 @@
 <html>
 <head>
     <title>Cronoquebra</title>
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap" rel="stylesheet"></head>
+
     <script src="index.js"></script>
+
     <body>
         <div class="center">
-            <h1>CLIQUE PARA ULTAR!</h1>
-            <a href="javascript:setTimeout(()=>{window. location = 'sec-page.html' },1350);">
-                <input class="button" type="button" value="R" onmousedown="play('revert.mp3')" onclick="ult ()"></button>
-            </a>
+            <h1>Press to ult!</h1>
+            <input type="myInput"  hidden>
+                <a href="javascript:setTimeout(()=>{window. location = 'sec-page.html' },1350);" >
+                    <input class="button" id="button" type="button" value="R" onclick="play('revert.mp3')" ></button>
+                </a>
         </div>
     <audio id="audio" src="./revert.mp3"></audio>
 </body>

@@ -2,7 +2,9 @@
     margin: 0;
     padding: 0;
 }
-
+:root {
+    --main-color: #1c3894;
+}
 body {
     background-image: URL("https://images5.alphacoders.com/595/thumb-1920-595808.jpg");
     background-repeat: no-repeat;
@@ -16,6 +18,8 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);    
 
+    
+
     -webkit-tap-highlight-color: transparent;
     -webkit-touch-callout: none;
     -webkit-user-select: none;
@@ -23,42 +27,40 @@ body {
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
+    
 }
 
 h1 {
-    margin-bottom: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
 
-    width: 370px;
-    height: 45px;
+    margin-bottom: 26px;
+    width: 440px;
+    height: 40px;
 
     line-height: 45px;
-    font-size: 32px;
     font-family: 'Rubik', sans-serif;
 
-
-    color: rgb(12, 73, 185);
-    background-color: rgba(0, 0, 0, 0.63);
-
+    color: rgb(0, 0, 0);
+    background-image: linear-gradient(to right, #191b1f6b, #0b1125, #02113360);
     border-radius: 12px;
     
-    text-shadow: 1px 1px 3px rgb(79, 166, 248);
+    text-shadow: 2px 0 10px #3166b6d8,
+                 2px 0 15px #4fa1af,
+                 2px 0 10px #3161a8d3;
 }
 
 .button {
-    margin: 25px 37%;
+    margin: 25px 39%;
 
-    background-color: rgb(0, 110, 255);
-
+    background-image: linear-gradient(to top right, #0153ced8, #4fa1af, #0153ced8);
     border-radius: 12px;
-    border: 5px solid rgb(3, 80, 151);
+    border: 5px solid rgb(28, 80, 129);
     
     font-size: 50px;
     font-family: 'Rubik', sans-serif;
-
 
     cursor: pointer;
     font-weight: bold;
@@ -66,16 +68,15 @@ h1 {
     width: 100px;
     height: 100px;
     outline: none;
-}
 
+    
+    transition: 350ms;
+}
 
 .button:hover {
-    animation: tremor 0.9s infinite;
-}
-    @keyframes tremor {
-        5%, 25%, 45% {
-            transform: translateX(-5px);
-            text-shadow: 0 0 10px rgb(0, 217, 255),
+    animation: tremor 0.8s infinite;
+    opacity: 1;
+    text-shadow: 0 0 10px rgb(0, 217, 255),
                          0 0 20px rgb(107, 165, 252),
                          0 0 10px rgba(107, 235, 252, 0.678);
             box-shadow:
@@ -84,77 +85,33 @@ h1 {
                          0 0 50px 30px rgb(107, 199, 252);
             color: rgb(126, 222, 235);             
             border: 5px solid rgba(161, 234, 247, 0.664);
+}
+    @keyframes tremor {
+        5%, 25%, 45% {
+            transform: translateX(-5px);
+            
     }
         10%, 30%, 50% {
             transform: translateY(-3px);
-            text-shadow: 0 0 10px rgb(0, 217, 255),
-                         0 0 20px rgb(107, 165, 252),
-                         0 0 10px rgba(107, 235, 252, 0.678);
-            box-shadow:
-                         0 0 10px 10px rgb(134, 205, 226),
-                         0 0 30px 20px rgb(0, 217, 255),
-                         0 0 50px 30px rgb(107, 199, 252);
-            color: rgb(126, 222, 235);                       
-            border: 5px solid rgba(161, 234, 247, 0.664);         
+      
     }
         15%, 35%, 55% {
             transform: translateX(3px);
-            text-shadow: 0 0 10px rgb(0, 217, 255),
-                         0 0 20px rgb(107, 165, 252),
-                         0 0 10px rgba(107, 235, 252, 0.678);
-            box-shadow:
-                         0 0 10px 10px rgb(134, 205, 226),
-                         0 0 30px 20px rgb(0, 217, 255),
-                         0 0 50px 30px rgb(107, 199, 252);
-            color: rgb(126, 222, 235);  
-            border: 5px solid rgba(161, 234, 247, 0.664);
+
     }
         20%, 40%, 60% {
             transform: translateY(-5px);
-            text-shadow: 0 0 10px rgb(0, 217, 255),
-                         0 0 20px rgb(107, 165, 252),
-                         0 0 10px rgba(107, 235, 252, 0.678);
-            box-shadow:
-                         0 0 10px 10px rgb(134, 205, 226),
-                         0 0 30px 20px rgb(0, 217, 255),
-                         0 0 50px 30px rgb(107, 199, 252);
-            color: rgb(126, 222, 235);  
-            border: 5px solid rgba(161, 234, 247, 0.664);
+
     }
         65%, 70%, 75% {
             transform: translateX(0px);
-            text-shadow: 0 0 10px rgb(0, 217, 255),
-                         0 0 20px rgb(107, 165, 252),
-                         0 0 10px rgba(107, 235, 252, 0.678);
-            box-shadow:
-                         0 0 10px 10px rgb(134, 205, 226),
-                         0 0 30px 20px rgb(0, 217, 255),
-                         0 0 50px 30px rgb(107, 199, 252);
-            color: rgb(126, 222, 235);  
-            border: 5px solid rgba(161, 234, 247, 0.664);
+
     }
         80%, 85%, 90%{
             transform: translateX(0px);
-            text-shadow: 0 0 10px rgb(0, 217, 255),
-                         0 0 20px rgb(107, 165, 252),
-                         0 0 10px rgba(107, 235, 252, 0.678);
-            box-shadow:
-                         0 0 10px 10px rgb(134, 205, 226),
-                         0 0 30px 20px rgb(0, 217, 255),
-                         0 0 50px 30px rgb(107, 199, 252);
-            color: rgb(126, 222, 235);  
-            border: 5px solid rgba(161, 234, 247, 0.664);
+
     }
         95%, 100%, 0%{
             transform: translateY(0px);
-            text-shadow: 0 0 10px rgb(0, 217, 255),
-                         0 0 20px rgb(107, 165, 252),
-                         0 0 10px rgba(107, 235, 252, 0.678);
-            box-shadow:
-                         0 0 10px 10px rgb(134, 205, 226),
-                         0 0 30px 20px rgb(0, 217, 255),
-                         0 0 50px 30px rgb(107, 199, 252);
-            color: rgb(126, 222, 235);  
-            border: 5px solid rgba(161, 234, 247, 0.664);
 }
 }
