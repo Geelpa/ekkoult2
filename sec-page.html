@@ -9,10 +9,15 @@
 
     <script>
         var myaudio = document.getElementById("audioID").autoplay = true;
+        function time {
+            var audio = document.getElementById("post-stop");
+            audio.play();
+        }
     </script>
 
 </head>
-<body>
+<body onload="time()">
+    
     <audio id="audioID" autoplay> 
         <source src="ekkosfx.mp3"  type="audio/mp3">
     </audio>
@@ -21,7 +26,7 @@
         <source src="ekkoscreen.mp4" type="video/mp4">
         <source src="ekkoscreen.ogg" type="video/ogg">
     </video>
-    
+    <audio id="post-stop" src=""></audio>
     
 </body>
 </html>
